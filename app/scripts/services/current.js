@@ -7,7 +7,7 @@
  * # current
  * Factory in the expertWinnerApp.
  */
-angular.module('yourApp')
+angular.module('expertWinnerApp')
   .factory('current', function ($resource) {
     // Service logic
     // ...

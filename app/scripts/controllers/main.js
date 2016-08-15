@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the expertWinnerApp
  */
-angular.module('yourApp')
+angular.module('expertWinnerApp')
   .controller('MainCtrl', function ($scope, current) {
     $scope.current = current.query();
 
