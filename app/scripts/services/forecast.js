@@ -2,18 +2,18 @@
 
 /**
  * @ngdoc service
- * @name expertWinnerApp.current
+ * @name expertWinnerApp.forecast
  * @description
- * # current
+ * # forecast
  * Factory in the expertWinnerApp.
  */
 angular.module('expertWinnerApp')
-  .factory('current', function ($resource) {
+   .factory('forecast', function ($resource) {
     // Service logic
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/weather?q=:location&units=imperial&APPID=d9947bfbe4d5f42fa39c0d5e08ff915f', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?id=:cityID&cnt=16&units=imperial&APPID=32d4223cc8559f298c1b30272de9d67c', {}, {
       query: {
         method:'GET',
         params:{
