@@ -13,7 +13,7 @@ angular.module('expertWinnerApp')
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/weather?q=:location&units=imperial&APPID=d9947bfbe4d5f42fa39c0d5e08ff915f', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/weather?id=:cityID&units=imperial&APPID=d9947bfbe4d5f42fa39c0d5e08ff915f', {}, {
       query: {
         method:'GET',
         params:{
