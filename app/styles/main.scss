@@ -55,7 +55,8 @@ body {
   .btn {
     font-size: 21px;
     padding: 14px 24px;
-  }
+    }
+
 }
 
 /* Supporting marketing content */
@@ -90,3 +91,5 @@ body {
   }
 }
 @import "transitions";
+@import "buttons";
+@import "weather";
